@@ -1,0 +1,55 @@
+.main-body__faqs
+	width: 100%
+	font-family: "Oswald"
+	.main-body__container
+		margin: 150px 33.54% 140px 33.54%
+		.faqs__title-wrapper
+			font-size: 30px
+			line-height: 75px
+			letter-spacing: 0.02em
+			font-weight: 400
+			text-align: center
+			margin-bottom: 50px
+			.faqs__title
+				text-transform: uppercase
+				font-size: 30px
+				font-weight: 400
+				letter-spacing: 0.2em
+		.faqs__accordion-wrapp
+			.accordion 
+				cursor: pointer
+				padding: 18px 0px 18px 0px
+				width: 100%
+				text-align: left
+				border: none
+				outline: none
+				transition: 0.4s
+				color: $green
+				position: relative
+				background-color: $main-color
+				margin-right: 40px
+				&::before
+					content: ""
+					position: absolute
+					display: block
+					width: 100%
+					height: 2px
+					background-color: #eaedde
+					top: 0						
+			.active, .accordion:hover 
+				background-color: #fafafa
+			.accordion__panel 
+				padding: 0 18px
+				display: none
+				overflow: hidden
+				display: none
+			&:nth-child(-n+2):after
+				content: ""
+				position: absolute
+				display: block
+				width: 33%
+				height: 2px
+				background-color: #eaedde
+
+
+				

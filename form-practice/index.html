@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <title>Lesson 11</title>
+</head>
+
+<body>
+    <div class="c-auth-wrapper">
+        <div class="c-container">
+
+            <form action="#" class="c-auth-container" method="GET">
+
+                <div class="c-tabs c-tabs-row">
+                    <div class="c-tab c-tab--active">
+                        <span class="c-tab__span c-tab__span--sign-in ">Sign in</span>
+                    </div>
+                    <div class="c-tab">
+                        <span class="c-tab__span c-tab__span--join-us">Join us</span>
+                    </div>
+                </div>
+
+                <div class="c-form">
+                    <div class="c-form__controls c-form__controls--username">
+                        <label type=" text" class="c-form__label">Username</label>
+                        <input type="text" class="c-form__input" id="username" name="username" minlength="3">
+                        <div class="c-form__error">error</div>
+                    </div>
+
+                    <div class="c-form__controls c-form__controls--password">
+                        <label type="text" class="c-form__label">Password</label>
+                        <input required type="password" class="c-form__input" id="password" name="password"
+                            minlength="8">
+                        <div class="c-form__error">error</div>
+                    </div>
+
+                    <div class="c-form__controls c-form__controls--checkbox">
+                        <input checked type="checkbox" name="keep" id="keep">
+                        <label for="keep" class="c-form__label c-form__label--checkbox">
+                            <span class="c-form__checkbox">&#10004</span>Keep me signed in
+                        </label>
+                    </div>
+
+                    <div class="c-form__controls c-form__controls--button">
+                        <button type="submit" class="c-form__btn">Sign in</button>
+                    </div>
+                </div>
+                <div class="c-help-links">
+                    <a href="javascript: void(0)" class="c-link c-help-pass">Forgot password</a>
+                    <a href="#join" class="c-link c-help-create">Create an account</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

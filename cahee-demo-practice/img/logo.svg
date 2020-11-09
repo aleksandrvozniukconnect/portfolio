@@ -1,0 +1,6 @@
+ <svg xmlns="http://www.w3.org/2000/svg">
+
+    <symbol id="logo" viewBox="0 0 512 512">
+      <text  transform="translate(48 28)" fill="#b9b9b9"  font-family="Pacifico-Regular, Pacifico"><tspan x="150" y="150">Cahee</tspan></text> 
+    </symbol>
+ </svg>

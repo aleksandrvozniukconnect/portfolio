@@ -1,0 +1,92 @@
+.main-body__feedback
+	width: 100%
+	font-family: "Oswald"
+	margin-bottom: 180px
+	.main-body__feedback-container
+		width: 100%
+		position: relative
+		.feedback__carousel-body
+			width: 100%
+			.slick-arrow //SLICK ARROWS
+				width: 100px
+				height: 100px
+				border: 1px solid #fff
+				padding: 40px 30px
+			.slick-prev
+				top: 750px
+				left: 43%
+				z-index: 8
+				&::before
+					content: ""
+					display: block
+					background: url(../images/dest/Left-white.png) no-repeat
+					width: 100px
+					height: 100px
+			.slick-next
+				top: 750px
+				right: 43%
+				z-index: 8
+				&::before
+					content: ""
+					display: block
+					background: url(../images/dest/Right-white.png) no-repeat
+					width: 130px
+					height: 100px
+			.feedback__carousel-block
+				width: 100%
+				position: relative
+				.carousel-block__image-wrapp
+					height: 800px
+					overflow: hidden
+					position: relative
+					&::before
+						content: ""
+						display: block
+						position: absolute
+						width: 100%
+						height: 100%
+						background-color: rgba(0,0,0,.4)
+						z-index: 9
+					.carousel-block__image
+						transform: translateY(-365px)
+						height: auto
+				.carousel-block__content-box
+					font-family: "Oswald"
+					position: absolute
+					top: 30%
+					left: 27.5%
+					text-align: center
+					color: #fff
+					width: 770px
+					.content-box__rating
+						margin-bottom: 40px
+					.content-box__par
+						font-size: 22px
+						font-weight: light
+						letter-spacing: 0.18em
+						line-height: 40px
+					.content-box__author
+						font-size: 24px
+						text-transform: uppercase
+						font-weight: 400
+						letter-spacing: 0.18em
+						line-height: 75px
+						&::before
+							content: ""
+							width: 45px
+							display: block
+							position: absolute
+							border-bottom: 2px solid rgba(255, 255, 255, 0.7 )
+							left: 270px
+							bottom: 35px
+		.carousel-body__rotate-block-text
+			position: absolute
+			bottom: 110px
+			left: -40px
+			font-size: 26px
+			letter-spacing: 0.18em
+			line-height: 50px
+			transform: rotate(90deg)
+			color: #fff
+			text-transform: uppercase
+			color: rgba(255, 255, 255, 0.7 )

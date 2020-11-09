@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    src: url(./fonts/ProximaNova-Regular.ttf);
+}
+@font-face {
+    font-family: 'Playfair-Display', sans-serif;
+    src: url(./fonts/Playfair-Display.ttf);
+}
+@font-face {
+    font-family: 'FuturaPT-Heavy', sans-serif;
+    src: url(./fonts/FuturaPT-Heavy.ttf);
+}
+@font-face {
+    font-family: 'Georgia', sans-serif;
+    src: url(./fonts/Georgia.ttf);
+}

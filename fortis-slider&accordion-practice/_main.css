@@ -1,0 +1,101 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+.main_head .lead {
+	color: #fff;
+	font-family: "OpenSansBold", sans-serif;
+}
+.phone_top {
+	top: 10px;
+	position: relative;
+	text-align: center;
+}
+.s_main {
+	margin-top: 20px;
+}
+.mine-_side .box {
+	margin-bottom: 20px;
+}
+.box .form-group {
+	margin-bottom: 0;
+}
+.box_back .panel-heading {
+	padding: 6px;
+}
+.box_search .panel-default {
+	border: 0;
+}
+.box_search .panel-default > .panel-heading {
+	border-radius: 4px;
+	-webkit-box-shadow: none;
+	box-shadow: none;	
+}
+.box_back h4 {
+	display: inline;
+	font-size: 14px;
+	font-family: "OpenSansBold", sans-serif;
+}
+.box_back .btn {
+	font-size: 12px;
+	text-transform: none;
+	font-family: "OpenSansBold", sans-serif;
+	padding: 6px 4px;
+	float: right;
+}
+.box_back .input-group {
+	margin-bottom: 10px;
+}
+.box_back .input-group::last-child {
+	margin-bottom: 0;
+}
+.panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+	font-family: "OpenSansBold", sans-serif;
+}
+.panel-heading {
+	padding: 10px 12px;
+}
+.box_mnu .panel-title {
+	padding-right: 18px;
+}
+.panel > .list-group .list-group-item span, .panel > .panel-collapse > .list-group .list-group-item span {
+	font-family: "OpenSansBold", sans-serif;
+}
+.panel-title .btn {
+	background-color: #FF910C;
+	 float: right;
+	 margin-right: -30px;
+	 margin-top: -28px;
+	 position: relative;
+	 border: none;
+	 border-left: solid 1px #ccc ;
+	 border-radius: 0;
+	 height: 55px;
+
+	 }
+.panel-title .btn .caret {
+	position: relative;
+	top: 20px;
+}

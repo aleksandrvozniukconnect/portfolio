@@ -1,0 +1,291 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media screen and (max-width: 999px) {
+	.text-info__btn {
+		margin-top: 28px;
+	}
+
+	.picture-subcat__img {
+		margin: 0;
+	}
+	.info-elements__content-visual {
+		right: -70px;
+		
+	}
+	.content-visual_inner-block::before {
+		width: 350px;
+	}
+	.content-visual_inner-block::after {
+		top: 20px;
+	}
+
+	.offer-propos--right, .offer-propos--left {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	.feedback-block__author-wrapp {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 445px;
+		
+	}
+
+	.author-wrapp__text-content{
+		max-width: 445px;
+		padding: 20px 40px;
+	}
+
+	.text-content__name-cap {
+		text-align: center;
+		
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.inner-container {
+		width: 70%;
+		
+	}
+
+	.heading-search-block__search-form {
+		max-width: 450px;
+		margin-bottom: 100px;
+		
+	}
+	.search-form__btn {
+		font-size: 0;
+		padding: 20px 20px;
+	}
+	.icon-search {
+		padding-left: 0;
+	}
+
+	.heading-search-block__text-wrapp {
+		padding-top: 190px;
+	}
+
+	.scroll-active__svg--scroll-down {
+		padding-bottom: 60px;
+	}
+	.header-nav__inner-container {
+		flex-direction: column;
+	}
+
+	.header-nav__text-logo {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.header-nav__nav-menu {
+		justify-content: space-around;
+	}
+
+	.advantage-block__text-info {
+		padding: 60px 0;
+	}
+
+	.picture-subcat__img {
+		width: 300px;
+		height: auto;
+	}
+
+	.advantage-block__picture-subcat {
+		margin-top: 25px;
+	}
+	
+	.picture-subcat__img--adv2 {
+		margin-top: 20px;
+	}
+
+	.search-el__txt-subj {
+		font-size: 1.6em;
+	}
+
+	.info-elements__content-visual {
+		right: -60px;
+		
+	}
+	.content-visual_inner-block::before {
+		width: 280px;
+	}
+
+	.suggest-offer-block {
+		padding: 100px 0px;
+	}
+	.suggest-offer-block__offer-propos {
+		text-align: center;
+	}
+
+	.feedback-block__inner-container {
+		padding: 100px 0;
+	}
+
+	.icon-menu__svg {
+		width: 40px;
+		height: 40px;
+		padding-right: 20px;
+	}
+
+	.foo-block {
+		padding: 50px 0 40px 0;
+	}
+
+}
+
+@media screen and (max-width: 424px) {
+
+	section {
+		width: 100%;
+		
+	}
+
+	.inner-container {
+		width: 90%;
+	}
+
+	.heading-search-block__text-wrapp {
+		padding-top: 150px;
+	}
+
+	.heading-search-block__search-form {
+		margin-bottom: 80px;
+	}
+
+	.scroll-active__svg--scroll-down {
+		padding-bottom: 50px;
+	}
+	
+	.heading-search-block__header-nav {
+		padding-top: 50px;
+	}
+
+	.search-form__area {
+		font-size: 0.85em;
+	}
+
+	.header-nav__nav-menu {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header-nav__text-logo {
+		margin-bottom: 50px;
+	}
+
+	.nav-menu__link {
+		margin-right: 0;
+		opacity: .8;
+	}
+
+	.link:not(:first-child) {
+		margin-top: 20px;
+	}
+
+	.advantage-block__inner-container {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.text-info__par {
+		text-align: justify;
+		padding-left: 30px;
+	}
+
+	.advantage-block__text-info {
+		padding: 0px 0 40px 0;
+	}
+	
+	.advantage-block__picture-subcat {
+		padding: 40px 0 20px 0;
+		margin-top: 10px;
+	}
+
+	.advantage-block__picture-subcat--right {
+		margin: 0 auto;
+	}
+
+	.picture-subcat__img--adv1 {
+		width: 350px;
+		height: auto;
+	}
+
+	.picture-subcat__img--adv2 {
+		display: none;
+	}
+	
+	.suggest-head-block__info-elements {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.element {
+		margin: 30px 0;
+	}
+
+	.info-elements__content-visual {
+		display: none;
+	}
+
+	.search-el__txt-subj {
+		font-size: 1.3em;
+	}
+	
+	.suggest-head-block__inner-container {
+		padding: 50px 0;
+	}
+
+	.suggest-offer-block__offer-propos {
+		width: auto;
+	}
+
+	.offer-propos__btn {
+		margin-top: 25px;
+	}
+
+	.feedback-block__title {
+		margin-bottom: 40px;
+	}
+
+	.feedback-block__inner-container {
+		padding: 30px 0 50px 0;
+	}
+
+	.feedback-block__author-wrapp {
+		min-width: auto;
+	}
+
+	.author-wrapp__text-content {
+		min-width: 400px;
+	}
+
+	.author-wrapp__image-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.image-block__img {
+		width: 400px;
+		height: auto;
+	}
+
+
+
+
+}

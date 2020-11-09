@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>HW for lesson 11 Part2</title>
+</head>
+
+<body class="c-body">
+    <div class="l-wrapper">
+        <section class="c-body-main-block">
+
+
+            <div class="c-main__header">
+                <div class="c-main__logo">
+                    <img src="./img/logo.png" alt="logo" class="c-image c-image--logo">
+                </div>
+            </div>
+            <div class="l-inner--main">
+
+                <div class="c-main__slider">
+                    <div class="c-product--slider">
+                        <img src="./img/Nike-SB-Stefan-Janoski-Max.png" alt="Nike-SB-Stefan-Janoski-Max"
+                            class="c-product__img">
+                        <ol class="c-pagination--slider">
+                            <li class="c-pagination-item">
+                                <svg class="c-item c-item--black js-item--active">
+                                    <use xlink:href="./img/pagination.svg#1"></use>
+                                </svg>
+
+                            </li>
+                            <li class="c-pagination-item">
+                                <svg class="c-item c-item--white">
+                                    <use xlink:href="./img/pagination.svg#2"></use>
+                                </svg>
+                            </li>
+                            <li class="c-pagination-item">
+                                <svg class="c-item c-item--red">
+                                    <use xlink:href="./img/pagination.svg#3"></use>
+                                </svg>
+                            </li>
+                            <li class="c-pagination-item">
+                                <svg class="c-item c-item--blue">
+                                    <use xlink:href="./img/pagination.svg#4"></use>
+                                </svg>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="c-main__sidebar-content">
+                    <div class="c-navbar">
+                        <div class="c-navbar__title">Nike SB Stefan Janoski Max</div>
+                        <div class="c-navbar__desc">Unisex Skateboarding Shoe</div>
+                        <div class="c-navbar__product-rate">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+                        <form class="c-navbar__dropdown-features">
+                            <select class="c-dropdown c-dropdown--size">
+                                <option value="Size">Size</option>
+                                <option value="Size7">7</option>
+                            </select>
+                            <svg class="c-item c-item--size">
+                                <use xlink:href="./img/pagination.svg#down-icon"></use>
+                            </svg>
+                            <select class="c-dropdown c-dropdown--qty">
+                                <option value="Qty">Qty</option>
+                            </select>
+                            <svg class="c-item c-item--qty">
+                                <use xlink:href="./img/pagination.svg#down-icon"></use>
+                            </svg>
+                        </form>
+                        <button class="c-btn">add to cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

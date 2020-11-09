@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "MuseoSansRounded",sans-serif;
+    src: url(./fonts/MuseoSansRounded300.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "MuseoSansRounded",sans-serif;
+}
+
+.c-body {
+    width: 100%;
+    background-color: #000;
+}
+
+.l-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background: url(./img/Group\ 3\ copy.png) no-repeat;
+
+}
+
+.c-body-main-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 696px;
+    height: 391px;
+    background-color: #111a28;
+}
+
+.c-main__header {
+    margin: 24px 0 0 21px;
+    width: 100%;
+}
+
+.l-inner--main {
+    width: 600px;
+    height: 334px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+}
+
+.c-main__slider {
+    margin-top: 69px;
+}
+
+.c-product--slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.c-pagination--slider {
+    margin-top: 60px;
+    display: flex;
+    width: 70px;
+    list-style-type: none;
+
+}
+
+.c-pagination-item{
+
+    height: 20px;   
+    width: 20px;
+    
+}
+
+.c-item {
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.js-item--active {
+    stroke: grey;
+    stroke-width: 2px;
+}
+.c-item:active   {
+    stroke: grey;
+    stroke-width: 2px;
+    
+}
+
+.c-item:hover {
+    transition: ease-out 0.3s;
+    opacity: .7;
+    box-shadow: 0 0 30px rgba(256,128,128,0.7);
+    filter: blur(0.2px);
+    cursor: pointer;
+}
+
+.c-main__sidebar-content {
+    margin-left: 78px;
+}
+
+.c-navbar {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.c-navbar__title {
+    color: #e1e1e1;
+    font-size: 23px;
+    line-height: 26px;
+    margin-right: 93px;
+    margin-bottom: 17px;
+}
+
+.c-navbar__desc {
+    color:#8d9094;
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+
+/* RATING STARS */
+
+.c-navbar__product-rate{
+	overflow: hidden;
+	width: 250px;
+    margin: 0 auto;
+    padding-right: 150px;
+    margin-bottom: 25px;
+}
+.c-navbar__product-rate:not(:checked) > input {
+	display: none;
+}
+.c-navbar__product-rate:not(:checked) > label { 
+   
+	float: right;
+	width: 20px;
+    padding: 0;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 30px;
+	color: lightgrey;
+	/* text-shadow: 1px 1px #bbb; */
+}
+.c-navbar__product-rate:not(:checked) > label:before {
+	content: '★';
+}
+.c-navbar__product-rate > input:checked ~ label {
+	color: gold;
+	/* text-shadow: 1px 1px #c60; */
+}
+.c-navbar__product-rate:not(:checked) > label:hover,
+.c-navbar__product-rate:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.c-navbar__product-rate > input:checked + label:hover,
+.c-navbar__product-rate > input:checked + label:hover ~ label,
+.c-navbar__product-rate > input:checked ~ label:hover,
+.c-navbar__product-rate > input:checked ~ label:hover ~ label,
+.c-navbar__product-rate > label:hover ~ input:checked ~ label {
+	color: gold;
+	/* text-shadow: 1px 1px goldenrod; */
+}
+.c-navbar__product-rate > label:active {
+	position: relative;
+}
+
+/* <END RATING STARS */
+
+.c-navbar__dropdown-features {
+    margin-bottom: 29px;
+    display: inline-block;
+
+}
+
+.c-dropdown {
+    position: relative;
+    padding: 5px 10px;
+    border: 1px solid #4f5560;
+    color: #4f5560;
+    width: 80px;
+    height: 32px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    background: #111a28;
+    outline: none;
+}
+
+
+.c-item--size {
+    position: absolute;
+    display: block;
+    right: 177px;
+    bottom: 148px;
+   
+}
+
+.c-item--qty {
+    position: absolute;
+    display: block;
+    right: 97px;
+    bottom: 148px;
+}
+
+.c-item--size:hover, .c-item--qty:hover {
+    display: none;
+}
+.c-btn {
+    height: 40px;
+    width: 184px;
+    text-transform: capitalize;
+    border: 1px solid #4f5560;
+    color: #4f5560;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #202835;
+
+}
+
+.c-btn:hover {
+    transition: ease-out 0.3s;
+    opacity: .7;
+    box-shadow: 0 0 30px rgba(256,128,128,0.7);
+    filter: blur(0.2px);
+    cursor: pointer;
+
+}
+

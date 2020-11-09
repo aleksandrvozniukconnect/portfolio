@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: #e5eeee;
+}
+
+.c-auth-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.c-container {
+    width: 400px;
+    height: 496px;
+    background: url(./img/photo_2020-04-21_18-57-22.jpg) no-repeat;
+}
+
+.c-auth-container {
+    width: 400px;
+    height: 496px;
+    padding: 48px 70px 55px;
+    background: linear-gradient(rgba(199,109,215, .75), rgba(47,35,173, .85));
+    box-shadow: 1px 15px 18px -8px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.c-tabs-row  {
+    display: flex;
+}
+
+.c-tabs {
+    margin-bottom: 47px;
+}
+
+.c-tab {
+    position: relative;
+    cursor: pointer;
+    color: #e1c2f1;
+    font-size: 18px;
+}
+
+.c-tab:first-child {
+    margin-right: 24px;
+}
+
+.c-tab__span{
+    display: block;
+}
+
+.c-tab--active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #E66A64;
+}
+
+.c-form__controls   {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-form__input {
+    background: none;
+    border: none;
+    outline: none;
+
+    width: 100%;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    color: #fff;
+    margin: 7px 0 0;
+    padding: 10px;
+}
+
+.c-form__input:focus {
+    border-color: #23ae92 ;
+}
+
+.c-form__error {
+    color: #ff0000;
+    font-size: 12px;
+    visibility: hidden;
+
+}
+
+.c-form__input:invalid+.c-form__error {
+    visibility: visible;
+}
+
+.c-form__controls--checkbox {
+    padding: 5px 0;
+}
+
+[type=checkbox] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+.c-form__label--checkbox {
+    display: flex;
+    align-items: center;
+    letter-spacing: .03em;
+}
+
+[type=checkbox]:checked+.c-form__label .c-form__checkbox {
+    font-size: 10px;
+}
+
+[type=checkbox]:focus+.c-form__label .c-form__checkbox {
+    border: 2px solid #e66e64;
+}
+
+.c-form__checkbox {
+    width: 16px;
+    height: 16px;
+    background-color: #23ae92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    font-size: 0;
+    border: 2px solid #23ae92;
+    transition: ease .3s font-size;
+}
+
+.c-form__btn {
+    margin-top: 41px;
+    width: 261px;
+    height: 42px;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #23AE92;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.c-help-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-link {
+    text-decoration: none;
+    color: #B9B9CC;
+    font-size: 13px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.c-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -3px;
+    background: #96C1DA;
+
+}

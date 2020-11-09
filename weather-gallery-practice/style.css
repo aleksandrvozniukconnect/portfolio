@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 952px;
+    height: 625px;
+    text-align: center;
+    margin: 0 auto 0 8%;
+}
+
+.container {
+    width: 1154px;
+    background-color: #3398cc;
+    height: 760px;
+    box-sizing: content-box;
+    border: 20px solid #2c80ac;
+}
+
+
+h1, h2 {
+    font-family: "Lucida-Sans-Unicode", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    display: block;
+    text-align: start;
+    margin: 0 auto 0 190px ;
+    padding-top: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.main-block {
+    width: 775px;
+    height: 490px;
+    background-color: #fff;
+    box-sizing: content-box;
+    margin: 28px auto 26px auto ;
+}
+
+ul {
+    font-size: 0;
+    width: auto;
+    height: 98.6%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    height: 24%;
+    text-align: center;
+    background-color: aqua;
+    font-size: 24px;    
+    box-sizing: content-box;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul:hover li:not(:hover){
+    opacity: 0.6;
+    
+}
+
+/* ul:hover > li:hover {
+    opacity: 1.0;
+} */
+
+/* Задаем отступы */
+
+li:first-child {
+    margin: 5px 5px 0 0;
+    width: 48.85%;
+}
+
+li:nth-child(even) {
+    margin: 5px 5px 0 0;
+}
+
+.club-25 {
+    width: 24.1%;
+}
+
+li:nth-child(5) {
+    margin-right: 5px;
+}
+
+li:nth-child(9) {
+    width: 48.88%;
+    margin-right: 5px;
+}
+
+li:nth-child(10) {
+    margin-right: 0px;
+}
+
+li:last-child {
+    width: 98.4%;
+    margin-top: 5px; 
+}
+
+/* Завершение присваивания отступов */
+
+li >h5 {
+    font-family: "Lucida-Sans-Unicode", sans-serif;
+    font-weight: 400;
+    padding: 30px 0 10px 0;
+}
+span {
+   font-family: "Lucida-Sans-Unicode", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    opacity: 0.8;
+    
+}
+span>i {
+    font-size: 30px;
+}
+
+h2 {
+    font-family: "Lucida-Grande", sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    font-size: 20px; 
+    cursor: auto;
+
+}

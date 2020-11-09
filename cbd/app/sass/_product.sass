@@ -1,0 +1,76 @@
+.main__product
+	width: 100%
+	font-family: "Oswald"
+	.product__caption
+		text-align: center
+		margin-bottom: 75px
+		letter-spacing: 0.2em
+	.product__carousel
+		overflow-y: none
+		display: flex
+		.carousel-block
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+			width: 31.927%
+			min-height: 500px
+			text-align: center			
+			margin-bottom: 60px
+			background-color: #fff
+			&:not(:last-child)
+				margin-right: 40px
+			.carousel-block__media-container
+				border: 1px	solid $green
+				border-bottom: none
+				.carousel-block__rating
+					color: $green
+					margin: 30px 0 0 0
+				.carousel-block__title
+					font-size: 18px
+					line-height: 75px
+					font-weight: 400
+					letter-spacing: 0.015em
+				.carousel-block__image-container
+					height: 295px
+					.carousel-block__image
+						margin: auto				
+			.carousel-block__pricing
+				background-color: #F1F1F1
+				display: flex
+				justify-content: space-between
+				font-family: "Oswald"
+				border: 1px solid #E1E1E1
+				.pricing__price-value
+					width: auto
+					padding: 24px 0 24px 30px
+					font-size: 18px
+					text-align: start
+				.pricing__shop-btn
+					width: 188px
+					padding: 22px 70px 22px 0
+					text-transform: uppercase
+					color: #fff		
+					font-size: 20px
+					background-color: $green
+					border: 1px solid $green
+					&:hover
+						cursor: pointer
+						background-color: lighten($green, 15%)
+						border: 1px solid lighten($green, 5%)
+						color: darken(#E1E1E1, 50%)
+					.content--line
+						width: 45px
+						display: block
+						position: relative					
+						&::after
+							content: ""
+							width: 100%
+							display: block
+							position: absolute
+							border-bottom: 2px solid rgba(255, 255, 255, 0.7 )
+							right: -100px
+							bottom: 15px
+					&:hover .content--line::after
+						border-bottom: 2px solid darken(#E1E1E1, 50%)	
+								
+				

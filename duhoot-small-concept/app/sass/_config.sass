@@ -1,0 +1,99 @@
+// USER VARIABLES SECTION
+
+$accent: orange // Accent Color
+$fontsize: 18px // Body Font Size
+$item-fsz: 14px
+$span-fsz: 12px
+$name-fsz: 16px
+$textcolor: #333
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$roboto: Roboto, sans-serif // Roboto Font Family
+$inner-cnt: 76.5625%
+$gotham: Gotham Medium, sans-serif
+$width: 1280px
+
+// Main Colors
+
+$orange: #e94e38
+$green: #1baf5d
+$grey: #e2dee0
+$cherry: #88499c
+$head-txt-col: #96a6a7
+$h-clr: #566375
+$grey-btn: #B6C0C1
+$yellow: #F19E1F
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2')
+
+@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
+@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
+@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('Gotham Medium', normal, normal, '../fonts/Gotham Medium.otf')
+
+// INPUT STYLES
+@mixin form-style
+	background: rgba(256, 256, 256, .1)
+	border: 1px solid rgba(107, 107, 105, .5)
+	border-radius: 25px
+	height: 50px
+	color: white
+	outline: none
+	width: 220px
+
+
+@mixin btn-style
+	background: $orange
+	border: none
+	border-radius: 30px
+	height: 60px
+	max-width: 100%
+	padding: 18px 35px
+	color: #fff
+	text-transform: uppercase
+	margin: auto
+	box-shadow: 1px 2px 0px rgba(193, 65, 46, 0.5)
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $roboto
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $textcolor

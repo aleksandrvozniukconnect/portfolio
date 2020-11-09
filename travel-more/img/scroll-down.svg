@@ -1,0 +1,14 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<symbol id="scroll-down">
+
+	<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+	 d="M4.125,4.651 L0.750,1.276 L1.594,0.432 L7.500,6.339 L13.406,0.362 L14.250,1.206 L7.500,8.026 L6.656,7.183 L4.125,4.651 Z"/>
+</symbol>
+
+
+
+</svg>

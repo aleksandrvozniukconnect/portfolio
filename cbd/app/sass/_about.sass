@@ -1,0 +1,84 @@
+.main-body__about
+	width: 100%
+	margin-top: 90px
+	.about__container
+		display: flex
+		flex-direction: column
+		margin: 0 16.77% 140px 16.77%
+		.title-block__wrapper
+			margin: auto
+			border: 7px solid #6E774A
+			margin-bottom: 100px
+			.about__title-block
+				text-align: center
+				padding: 20px 90px 45px 90px
+				.title-block__caption
+					font-family: "Oswald"
+					text-transform: uppercase
+					font-size: 24px
+					line-height: 75px
+					font-weight: normal
+					letter-spacing: 0.2em
+		.about__tab-menu
+			display: flex
+			flex-direction: column
+			font-family: "Oswald"
+			.tab-menu__show-title-menu
+				display: flex
+				position: relative
+				margin-bottom: 100px
+				width: 80%
+				white-space: nowrap
+				&:hover
+					cursor: pointer
+				&::after
+					content: ""
+					width: 100%
+					position: absolute
+					display: block
+					border-bottom: 3px solid rgba(110, 119, 74, 0.7)
+					bottom: 0
+				.show-title-menu
+					display: block
+					margin-right: 90px	
+					.show-title-menu__anchor
+						font-size: 30px
+						line-height: 75px
+						font-weight: 400
+						letter-spacing: 0.05em
+						color: #000	
+						padding: 10px
+						padding-bottom: 12px
+						&:hover
+							background-color: rgba(110, 119, 74, 0.4)	
+					.anchor--active
+						border-bottom: 2px solid #000
+						box-sizing: border-box
+						height: inherit
+						
+		.tab-menu__show-tab-menu
+			.tab-menu__show-tab
+				display: flex
+				.show-tab__text-content
+					margin-top: 35px
+					margin-right: 9.895%
+					line-height: 40px
+					.text-content__caption
+						font-size: 24px
+						line-height: 40px
+						font-weight: 400
+						letter-spacing: 0.2em
+						margin-bottom: 50px
+					.text-content__par
+						color: #6E774A
+						font-size: 18px
+						font-weight: 200
+						margin-bottom: 50px
+						letter-spacing: 0.04em
+				.show-tab__images
+					.show-tab__img-block
+						.img-block__img
+							width: 570px
+							height: 300px
+						&:first-child
+							margin-bottom: 30px

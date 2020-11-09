@@ -1,0 +1,403 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+*
+	box-sizing: border-box
+body
+	width: 100%
+	box-sizing: border-box
+	.background-container
+		width: 100%
+		height: 450px
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/Layer-4.png) no-repeat
+		background-size: cover
+		.header-block
+			width: 100%
+			max-height: 75px
+			background: #fff
+			.header-block__navbar-inner
+				width: 100%
+				height: 75px
+				padding-left: 13%
+				display: flex
+				white-space: nowrap
+				.header-block__logo
+					margin: 15px 0
+				.header-block__navbar
+					width: auto
+					padding: 28px 6.78%
+					.navbar__list-items
+						text-transform: uppercase
+						font-size: 0
+						padding: 0
+						.item
+							list-style-type: none
+							display: inline-block
+							&:nth-child(-n+4)
+								padding-right: 20px
+							.item__link
+								font-family: $gotham
+								font-weight: normal
+								line-height: 24px
+								color: $head-txt-col
+								text-decoration: none
+								font-size: $item-fsz
+								font-weight: normal
+				.header-block__search-button
+					min-width: 7%
+					height: 75px
+					text-align: center
+					background: $grey
+					.search-button__svg-search
+						padding: 28px 0
+						width: 20px
+						height: auto
+						fill: white
+				.header-block__login-button
+					width: 26%
+					min-width: 317px
+					height: 75px
+					background: $orange
+					padding: 22px 0 22px 40px
+					.login-button__svg-login
+						width: 20px
+						fill: white
+					.login-button__text
+						text-decoration: none
+						color: white
+						padding-left: 16px
+						text-transform: uppercase
+						font-size: $item-fsz
+
+		.title-form
+			width: 100%
+			margin: 0 auto
+			.title-form_inner-container
+				text-align: center
+				width: 38%
+				.title-form__form
+					display: flex
+					flex-direction: column
+					justify-content: space-around
+					margin-top: 25px
+					.form__title
+						color: #fff
+						font-size: 30px
+						line-height: 3em
+					.form__select-wrapp
+						display: flex
+						justify-content: space-between
+						.form-item
+							@include form-style
+					.form__search-item
+						@include form-style
+						width: 100%
+						margin-top: 20px
+
+					.form__search-button
+						@include btn-style
+						margin-top: 29px
+	.filter-navbar
+		width: 100%
+		height: 60px
+		.inner-container
+			margin: auto
+			width: $inner-cnt
+		.filter-navbar__inner
+			height: inherit
+			display: flex
+			justify-content: space-between
+			.filter-navbar__filter-list
+				list-style-type: none
+				display: flex
+				margin-top: 22px
+				color: $head-txt-col
+				padding: 0
+				.filter-list__item
+					font-size: 12px
+					text-transform: uppercase
+				.filter-list__item:hover
+					cursor: pointer
+					color: $orange
+				.filter-list__item:not(:last-child)
+					margin-right: 20px
+				.active
+					color: $orange
+			.select-wrapp
+				display: flex
+				margin-top: 13px
+
+				.select-wrapp___item
+					@include form-style
+					width: fit-content
+					height: 35px
+					color: $orange
+					cursor: pointer
+					text-transform: uppercase
+					font-size: 12px
+					padding: 8px 26px 8px 18px
+
+					&:not(:last-child)
+						margin-right: 10px
+				.selected
+					background: #1BAF5D
+					color: #fff
+			.filter-navbar__filter-icons-list
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 12px
+				.filter-icons-list__menu
+					display: flex
+					padding: 0
+					margin: 10px 8px 10px 18px
+					.menu-item
+						list-style-type: none
+						width: 40px
+						height: 40px
+						border-radius: 50%
+						&:not(:last-child)
+							margin-right: 8px
+					.green-house
+						background: $green
+						padding: 9px 8px
+					.grey-lady
+						background: $grey-btn
+						padding: 9px 12px
+					.grey-university
+						background: $grey-btn
+						padding: 10px 5px
+					.yellow-note
+						background: $yellow
+						padding: 10px 9px
+					.cherry-bus
+						background: $cherry
+						padding: 9px 11px
+						.menu-item__link
+							display: block
+							height: 100%
+	.offer-block
+		width: 100%
+		background: #F3F1F2
+		.inner-container
+			margin: auto
+			width: 980px
+			padding-top: 48px
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				border: 1px solid #E2DEE0
+				width: 980px
+				bottom: 0
+
+		.offer-block__inner-container
+			display: flex
+			flex-wrap: wrap
+			flex-direction: row
+			justify-content: space-around
+			padding-bottom: 30px
+
+			.outblock-wrapp
+				width: 456px
+				height: 568px
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+				.offer-element
+					background: #fff
+					width: 100%
+					position: relative
+					text-align: center
+					.offer-element__img-block
+						width: 100%
+						.img-block__image
+							z-index: 10
+						&:after
+							content: ""
+							display: block
+							width: 100%
+							border-bottom: 3px solid $green
+							position: absolute
+							bottom: 47%
+							z-index: 11
+					.offer-element__text-block
+						width: 100%
+						position: absolute
+						top: 65%
+						.text-block__desc-par
+							font-size: $item-fsz
+							padding: 0
+							margin: 0
+						.text-block__subtitle
+							text-transform: uppercase
+							color: $green
+							$item-fsz: $span-fsz
+							font-weight: 400
+							.text-block__stars-rate
+								.c-navbar__product-rate
+									overflow: hidden
+									width: 250px
+									margin: 0 auto
+									padding-right: 150px
+									margin-bottom: 25px
+
+					.offer-element__price-btn
+						position: absolute
+						z-index: 12
+						background: $green
+						padding: 4px 11px
+						top: 7px
+						right: 8px
+						border-radius: 12.5px
+						font-size: 12px
+						color: #fff
+					.offer-element_icon-block
+						width: 55px
+						height: 55px
+						border: 3px solid #fff
+						border-radius: 50%
+						position: absolute
+						bottom: 37%
+						left: 37%
+						z-index: 12
+					.green-house
+						background: $green
+						padding: 6px 13px
+					.yellow-note
+						background: $yellow
+						padding: 8px 5px
+					.cherry-bus
+						background: $cherry
+						padding: 9px 11px
+						.menu-item__svg
+							transform: scale(1.2)
+				.offer-element--small
+					width: 210px
+					height: 266px
+				.offer-element--large
+					width: 456px
+					height: 270px
+					// background: red
+				.offer-element--beach
+					.offer-element__img-block
+						&:after
+							border-bottom: 3px solid $yellow
+					.offer-element__text-block
+						.text-block__subtitle
+							margin-top: 20px
+							color: $yellow
+				.offer-element--bus
+					.offer-element__img-block
+						&:after
+							border-bottom: 3px solid $cherry
+					.offer-element__text-block
+						.text-block__subtitle
+							margin-top: 20px
+							color: $cherry
+				.offer-element--agency
+					text-align: start
+					.offer-element__img-block
+						&:after
+							content: ""
+							display: block
+							width: 100%
+							border-bottom: 3px solid $green
+							position: absolute
+							bottom: 55%
+							z-index: 11
+					.offer-element__text-block
+						width: 100%
+						position: absolute
+						top: 33%
+						left: 20%
+
+						display: flex
+						.text-block__subtitle
+							text-transform: uppercase
+							color: #fff
+							font-size: $fontsize
+							font-weight: 400
+					.offer-element__feedback-block
+						position: absolute
+						bottom: 10%
+						left: 5%
+						display: flex
+						.feedback-block__avatar
+
+							.img-block__image
+								transform: scale(.95)
+								border: 3px solid #F3F1F2
+								border-radius: 50%
+						.offer-element__feedback-text
+							font-size: $item-fsz
+							line-height: 20px
+							margin: 0 15px
+							.feedback-text__name
+								display: block
+								text-transform: uppercase
+								font-size: $name-fsz
+					.offer-element_icon-block
+						width: 55px
+						height: 55px
+						border: 3px solid #fff
+						border-radius: 50%
+						position: absolute
+						bottom: 45%
+						left: 5%
+						z-index: 12
+				.offer-element--skybox
+					text-align: start
+					.offer-element__img-block
+						&:after
+							content: ""
+							display: block
+							width: 100%
+							border-bottom: 3px solid $yellow
+							position: absolute
+							bottom: 55%
+							z-index: 11
+					.offer-element__text-block
+						width: 100%
+						position: absolute
+						top: 33%
+						left: 20%
+						display: flex
+						.text-block__subtitle
+							text-transform: uppercase
+							color: #fff
+							font-size: $fontsize
+							font-weight: 400
+					.offer-element__feedback-block
+						position: absolute
+						bottom: 10%
+						left: 5%
+						display: flex
+						.feedback-block__avatar
+							.img-block__image
+								transform: scale(.95)
+								border: 3px solid #F3F1F2
+								border-radius: 50%
+						.offer-element__feedback-text
+							font-size: $item-fsz
+							line-height: 20px
+							margin: 0 15px
+							.feedback-text__name
+								display: block
+								text-transform: uppercase
+								font-size: $name-fsz
+					.offer-element_icon-block
+						width: 55px
+						height: 55px
+						border: 3px solid #fff
+						border-radius: 50%
+						position: absolute
+						bottom: 45%
+						left: 5%
+						z-index: 12
+					.offer-element_icon-block
+						background: $yellow
+			.offer-block__load-more-btn
+				text-align: center
+				padding-bottom: 34px

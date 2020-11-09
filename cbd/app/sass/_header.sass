@@ -1,0 +1,134 @@
+
+
+.header-wrapper
+	width: 100%
+	background: url(../images/dest/img-5.png) no-repeat
+	background-size: cover
+	position: relative
+	.header	
+		.header__inner-container
+			display: flex
+			justify-content: space-between			
+			.header__navbar-list
+				display: flex
+				font-family: 'Oswald'
+				padding: 25px 0
+				margin-left: 60px
+				.nav-item
+					&:not(:last-child)
+						padding-right: 45px
+					.nav-item__link
+						white-space: nowrap
+						text-transform: uppercase	
+						font-size: 1em
+			.header__text-logo
+				text-align: center
+				padding: 16px 0
+				color: #fff
+				font-size: 30px
+				font-family: 'Oswald'				
+			.header__btn-group
+				font-size: 0
+				font-family: 'Oswald'				
+				.btn-group__btn
+					height: 100%
+					padding: 15px 32px
+					text-transform: uppercase
+					border: 1px solid #fff
+					border-top: none
+					margin: 0
+					font-size: 16px	
+					.btn--search
+						font-weight: normal
+		.content-box
+			width: 100%
+			position: relative
+			&::after		
+				content: ""
+				min-width: 100%	
+				position: absolute
+				display: block
+				border-bottom: 1px solid white
+				bottom: 0
+				margin: 0
+		.header__heading-legend-block
+			padding-bottom: 350px
+			.heading-legend-block__container
+				margin: 280px 16.77% 0  0
+				text-align: right
+				.heading-legend-block__introduce
+					font-family: "Oswald"
+					.introduce__title
+						font-size: 3.5em						
+						color: #fff
+						line-height: 75px
+						font-weight: normal
+						letter-spacing: 0.28em
+					.introduce__tagline
+						font-size: 1.5em
+						color: #fff
+						line-height: 75px
+						font-weight: normal
+						letter-spacing: 0.28em
+					.introduce__btn
+						border: 1px solid rgba(255, 255, 255, 0.7 )
+						font-size: 20px
+						padding: 20px 100px 20px 40px 
+						text-transform: uppercase
+						.content--line
+							width: 45px
+							display: block
+							position: relative
+							&::after
+								content: ""
+								width: 100%
+								display: block
+								position: absolute
+								border-bottom: 2px solid rgba(255, 255, 255, 0.7 )
+								right: -150px
+								bottom: 15px
+					.introduce__more
+						margin-top: 34px
+						color: #fff	
+						font-size: 18px
+						font-weight: normal
+						letter-spacing: 0.28em		
+						.fa
+							font-weight: normal
+		.header__rotate-block-text
+			position: absolute
+			bottom: 250px
+			left: -60px
+			font-size: 26px
+			letter-spacing: 0.08em
+			line-height: 50px
+			transform: rotate(-90deg)
+			color: #fff
+			text-transform: uppercase
+			&::before
+				content: ""
+				width: 107px
+				display: block
+				position: absolute
+				border-bottom: 2px solid rgba(255, 255, 255, 0.7 )
+				left: -140px
+				bottom: 25px
+		.header__scroll-arrow--down
+			width: 100%
+			position: absolute
+			left: 50%
+			bottom: 60px
+			color: #fff
+			.fa	
+				font-size: 30px
+				font-weight: 400
+				border: 1px solid rgba(255, 255, 255, 0.01 )
+				border-radius: 50%
+				height: 45px
+				width: 45px
+				padding: 6px 0
+				text-align: center
+				&:hover
+					cursor: pointer
+					background-color: rgba(256, 256, 256, 0.4 )
+					border: 1px solid rgba(255, 255, 255, 0.7 )
